@@ -18,8 +18,8 @@ def reduce(arr, starting = nil)
     sum = starting
     i = 0 
   else
-    sum = arr[i]
-    i = 0 
+    sum = arr[0]
+    i = 1 
   end
   
   while i < arr.length do
