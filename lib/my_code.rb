@@ -14,16 +14,19 @@ end
 
 def reduce(arr, starting = nil)
   
-  i = 0
-  arrTotal = 0
+  if starting
+    sum = starting
+    i = 0 
+  else
+    sum = arr[i]
+    i = 0 
+  end
+  
   while i < arr.length do
     
-    arrTotal += arr[i]
-    
-    total = yield(arrTotal, starting)
+    sum = yield(arr[i], starting)
     i+=1
   end
-
-  total
+  sum 
   
 end
