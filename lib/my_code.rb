@@ -25,7 +25,7 @@ def reduce(arr, starting = nil)
   while i < arr.length do
     
     sum = yield(starting, arr[i])
-    i+=1
+    i += 1
   end
   sum 
   
