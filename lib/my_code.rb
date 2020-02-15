@@ -12,7 +12,7 @@ def map(arr)
   
 end 
 
-def reduce(arr)
+def reduce(arr, starting = 0)
   
   arr2 =[]
   i = 0
