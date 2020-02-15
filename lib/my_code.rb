@@ -15,6 +15,7 @@ end
 def reduce(arr, starting = nil)
   
   i = 0
+  arrTotal = 0
   while i < arr.length do
     
     arrTotal += arr[i]
