@@ -12,7 +12,7 @@ def map(arr)
   
 end 
 
-def reduce(arr, starting = 0)
+def reduce(arr, starting = nil)
   
   i = 0
   while i < arr.length do 
